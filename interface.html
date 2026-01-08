@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGR - Tora Transportes</title>
+    <link rel="stylesheet" href="stackpath.bootstrapcdn.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-tora">
+    <div class="container">
+        <span class="navbar-brand mb-0 h1">TORA TRANSPORTES - Relatórios de Eficiência</span>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-light">
+            <h5 class="mb-0">Cruzamento de Dados: RH vs Operacional</h5>
+        </div>
+        <div class="card-body">
+            <form id="formFiltro">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="data_inicio">Período Inicial</label>
+                        <input type="date" class="form-control" id="data_inicio" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="data_fim">Período Final</label>
+                        <input type="date" class="form-control" id="data_fim" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="modelo">Modelo do Veículo</label>
+                        <select id="modelo" class="form-control">
+                            <option value="">Todos os Modelos</option>
+                            <option value="volvo">Volvo FH 540</option>
+                            <option value="scania">Scania R450</option>
+                            <option value="mercedes">Mercedes-Benz Axor</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-danger btn-lg" id="btnGerar">
+                        Gerar Planilha (.xlsx)
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div id="statusMessage" class="mt-4 d-none">
+        <div class="alert alert-info" id="statusText"></div>
+    </div>
+</div>
+
+<footer class="footer mt-5 py-3 bg-light text-center">
+    <span class="text-muted small">© 2019 Tora Transportes Ltda - v1.2.0</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
