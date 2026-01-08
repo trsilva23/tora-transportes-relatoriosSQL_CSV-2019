@@ -11,18 +11,12 @@ O objetivo é identificar o custo real de cada rota por motorista, consolidando 
 - **Frontend:** Bootstrap 4.3.1 e jQuery 3.4.1
 - 
 ## Estrutura
-- `config.php`: Credenciais das duas instâncias Oracle.
-- `index.php`: Interface de usuário e filtros.
-- `script.sql`: Contém a logic de negócio dentro do banco (PL/SQL).
-
-/diretorio_raiz
-│   config.php            # Configurações de conexão (2 bancos)
-│   index.php             # Interface e lógica de chamada
-│   functions.php         # Processamento de dados e headers Excel
-│   script.sql            # Definições PL/SQL (Oracle)
-│   README.md             # Documentação técnica
-└── /assets
-    └── style.css         # Customização visual
+- `config.php`: Definições de conexões e ambientes.
+- `interface.html`: Interface web Bootstrap 4.
+- `style.css`: Identidade visual institucional.
+- `main.js`: Validação e feedback de interface.
+- `relatorio.php`: Lógica de execução via OCI8.
+- `procedimentos.sql`: Código PL/SQL para processamento em banco.
 
 ## Instrução
 0. REALIZAR BACKUP DOS BANCOS ANTES DE RODAR O PROCESSO!
