@@ -18,7 +18,7 @@ O objetivo é identificar o custo real de cada rota por motorista, consolidando 
 - `relatorio.php`: Lógica de execução via OCI8.
 - `procedimentos.sql`: Código PL/SQL para processamento em banco.
 
-## Instrução
+## Instruções
 0. REALIZAR BACKUP DOS BANCOS ANTES DE RODAR O PROCESSO!
 1. Instalar o **Oracle Instant Client** na máquina servidora.
 2. Habilitar `extension=oci8_12c` no `php.ini`.
